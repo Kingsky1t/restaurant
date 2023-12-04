@@ -8,7 +8,7 @@ export const RestaurantContextProvider = ({ children }) => {
 
     const fetchRestaurant = () => {
         axios
-            .get("https://restaurant-backend-jkxb.onrender.com")
+            .get("http://localhost:3000/")
             .then((res) => {
                 setRestaurant(res.data.restaurant);
                 setLoading(false);
